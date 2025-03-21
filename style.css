@@ -165,6 +165,9 @@ body {
     transition: transform 0.3s ease;
 }
 
+.project-link:hover .link-arrow {
+    transform: none;
+}
 
 
 .project-status {
