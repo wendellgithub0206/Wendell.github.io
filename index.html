@@ -3,36 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Wendell</title>
+    <title>Wendell | Portfolio</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
+            color: #333;
             text-align: center;
         }
         .container {
+            max-width: 800px;
+            margin: 50px auto;
             background: white;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
         p {
+            font-size: 1.2em;
             color: #666;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #0073e6;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            color: #005bb5;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome</h1>
-        <p>Hi, I'm Wendell. Thanks for visiting my page.</p>
+        <h1>Welcome to My Page</h1>
+        <p>Hi, I'm Wendell. A passionate developer and problem solver.</p>
+        <div class="links">
+            <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+            <a href="mailto:youremail@example.com">Contact Me</a>
+        </div>
     </div>
 </body>
 </html>
