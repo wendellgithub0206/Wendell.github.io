@@ -103,6 +103,48 @@ body {
     fill: currentColor;
 }
 
+/* Education and Work Experience Sections */
+.education, .work-experience {
+    margin: 4rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.education h2, .work-experience h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.education-item, .job-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.education-item h3, .job-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-item p, .job-item p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.job-item ul {
+    margin-left: 1.5rem;
+    color: var(--text-color);
+}
+
+.job-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* Existing CSS continues from the previous submission... */
 /* Projects Section */
 .projects {
     margin: 4rem 0;
@@ -165,11 +207,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.project-link:hover .link-arrow {
-    transform: none;
-}
-
-
 .project-status {
     color: var(--accent-color);
     font-weight: 600;
@@ -227,5 +264,99 @@ body {
 
     .title-gradient {
         font-size: 2.4rem;
+    }
+
+    .education, .work-experience {
+        padding: 1rem;
+    }
+}
+
+/* About Me Section */
+.section.about {
+    margin: 4rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.section.about h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.about-description {
+    display: flex;
+    align-items: center;
+}
+
+.about-description p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.skills-section {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.skills-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.skill-category {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.skill-list {
+    list-style-type: none;
+}
+
+.skill-category div {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.skill-category div::before {
+    margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-categories {
+        grid-template-columns: 1fr;
     }
 }
